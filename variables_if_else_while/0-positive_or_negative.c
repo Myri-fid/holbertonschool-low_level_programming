@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *main -  program will assign a random number to the,
- variable n each time it is executed.
+ *main - print  random number to the,variable n 
+ *each time it is executed.
  */
 int main(void)
 {
@@ -14,9 +14,12 @@ int main(void)
 
 if (n>0) {
 	printf("is positive\n");
-}else (n==0){
+}
+else (n==0){
 	printf("is zero\n");
-}else if{
-	printf("is negatie\n");
-}return (0);
+}
+else if{
+	printf("is negative\n");
+}
+return (0);
 }
