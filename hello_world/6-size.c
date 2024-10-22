@@ -6,13 +6,19 @@
  * Return: Always 0.
  */
 
-int main(int ac, char **av)
+int main(void)
 {
-	Size of a char: 1 byte(s)
-	Size of an int: 4 byte(s)
-	Size of an long int: 4 byte(s)
-	Size of a long long int: 8 byte(s);
-	Size of a float: 4 byte(s)
+	char charType;
+	int intType;
+	unsigned int longType;
+	long doubleType
+	float floatType;
+	
+	printf("Size of a char: %zu bytes\n", sizeof(charType));
+	printf("Size of an int: %zu bytes\n", sizeof(intType));
+	printf("size of a long int: %zu bytes\n", sizeof(longType));
+	printf("size of a long long int: %zu bytes\n", sizeof(doubleType));
+	printf("size of a float: %zu bytes\n", sizeof(floatType));
 
 	return (0);
 }
