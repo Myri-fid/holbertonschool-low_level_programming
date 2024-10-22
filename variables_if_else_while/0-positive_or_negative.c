@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main - print  random number to the,variable n 
+ *main - Entry point
  *each time it is executed.
  */
 int main(void)
@@ -10,20 +10,19 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n= rand() - RAND_MAX / 2;
-	printf("%d \n", n);
+	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
-{
+	{
 		printf("is positive\n");
-}
+	}
 	else if (n < 0)
-{
+	{
 		printf("is negative\n");
-}
+	}
 	else
-{
+	{
 		printf("is zero\n");
-}
+	}
 	return (0);
 }
