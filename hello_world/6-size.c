@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the size of various types on the computer it is compiled
- * and run on.
+ * main - prints the size of various, compiled and run on.
  * Return: Always 0.
  */
 
@@ -13,6 +12,5 @@ int main(void)
 	printf("size of a long int: %1d byte(s)\n", sizeof(long int));
 	printf("size of a long long int: %1d byte(s)\n", sizeof(long long int));
 	printf("size of a float: %1d byte(s)\n", sizeof(float));
-
 	return (0);
 }
