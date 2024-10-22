@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <bits/libc-header-start.h>
 
 /**
  * main - prints the size of various types on the computer it is compiled
