@@ -14,7 +14,7 @@ int main(void)
 		i++;
 	}
 	else
-		(i > 96 && i < 103)
+		(i > 96 ; i < 103)
 	{
 		putchar(i);
 		i++;
