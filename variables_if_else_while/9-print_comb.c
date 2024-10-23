@@ -5,14 +5,14 @@
 */
 int main(void)
 {
-        int i = 48;
+	int i = 48;
 
-        for
-                (i < 58)
-        {
-                putchar(i);
-                i++;
-        }
-        putchar('\n');
-        return (0);
+	while
+		(i < 58)
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
