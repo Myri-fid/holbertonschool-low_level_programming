@@ -2,16 +2,16 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Entry point
+*main - prints numbers of base 10 starting from 0
 * Return: 0
 */
 int main(void)
 {
 	int n;
 
-	n = 10;
+	n = 0;
 	while
-		(n > 0);
+		(n < 10);
 	{
 		printf("\n n = %d", n);
 		n++;
