@@ -1,21 +1,17 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
-*main - prints numbers of base 10 starting from 0
+*main - Entry point
 * Return: 0
 */
 int main(void)
 {
-	int n = 0;
+	int i = 0;
 
 	while
-		(n <= 10);
+		(i < 11)
 	{
-		printf("%d", n);
-		if (n <= 10)
-		n++;
+		printf("%d\n", i);
+		i++;
 	}
-	printf("\n");
 	return (0);
 }
