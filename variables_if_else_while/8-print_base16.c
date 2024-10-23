@@ -7,8 +7,8 @@ int main(void)
 {
 	int i;
 
-	for
-		(i = 48)
+	while
+		(i > 47)
 	{
 	if
 		(i < 58)
@@ -16,8 +16,8 @@ int main(void)
 		putchar(i);
 		i++;
 	}
-	for
-		(i = 96)
+	while
+		(i > 95)
 	if
 		(i < 103)
 	{
