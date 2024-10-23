@@ -7,14 +7,18 @@
 */
 int main(void)
 {
-	int n;
+	int n = 0;
 
-	n = 0;
 	while
 		(n < 10);
 	{
-		printf("\n n = %d", n);
+		printf("%d", n);
+		if (n < 9)
+	{
+		printf(",");
+	}
 		n++;
 	}
+	printf("\n");
 	return (0);
 }
