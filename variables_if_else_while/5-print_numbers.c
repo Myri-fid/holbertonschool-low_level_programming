@@ -10,13 +10,10 @@ int main(void)
 	int n = 0;
 
 	while
-		(n < 10);
+		(n <= 10);
 	{
 		printf("%d", n);
-		if (n < 9)
-	{
-		printf(",");
-	}
+		if (n <= 10)
 		n++;
 	}
 	printf("\n");
