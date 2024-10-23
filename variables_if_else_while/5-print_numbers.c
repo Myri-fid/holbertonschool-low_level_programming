@@ -9,9 +9,10 @@ int main(void)
 {
 	int n;
 
-	n = 10;
+	n = number;
+	for (number = 10; number >= 0);
 	{
-		printf("%d", n - 1);
+		printf("%d", n);
 	}
 	return (0);
 }
