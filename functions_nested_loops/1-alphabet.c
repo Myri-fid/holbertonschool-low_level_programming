@@ -1,19 +1,17 @@
 #include "main.h"
 
 /**
- *main - _putchar charactere
- *
- * Return: 0
- */
+*main - _putchar the alphabet, in lowercase
+*followed by a new line
+*/
 int main(void)
 {
-	int alphabet;
+	char letter;
 
-	for
-		(alphabet = 'a' && alphabet <= 'z', alphabet++)
+	for (letter = 'a'; letter <= 'z' ; letter++)
 	{
-			_putchar(alphabet);
+		_putchar(letter);
 	}
+
 	_putchar('\n');
-	return (0);
 }
