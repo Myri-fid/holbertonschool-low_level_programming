@@ -7,23 +7,13 @@ int main(void)
 {
 	int i;
 
-	while
-		(i > 47)
-	{
-	if
-		(i < 58)
+	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
-		i++;
 	}
-	while
-		(i > 95)
-	if
-		(i < 103)
+	for (i = 97; i < 103; i++)
 	{
 		putchar(i);
-		i++;
-	}
 	}
 	putchar('\n');
 	return (0);
