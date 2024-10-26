@@ -8,10 +8,9 @@ void times_table(void)
 {
 	int i;
 
-	for (i = 0; i <= 9; i++)
+	for (i = '48'; i <= '57'; i++)
 	{
-		_putchar("9 x %d = %d\n", i, 9 * i);
+		_putchar("'48' x %d = %d\n", i, '57' * i);
 	}
 	_putchar("\n");
-	return (0);
 }
