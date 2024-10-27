@@ -7,9 +7,11 @@
 */
 int print_last_digit(int)
 {
-	int n;
+	int number, last_digit;
 
-	n = print_last_digit(98);
-		_putchar("=> %d\n", n);
-	return (0);
+		_putchar("");
+		scanf("%d", &number);
+		last_digit = number % 10;
+		_putchar("%d %d", number, last_digit);
+	return (last_digit);
 }
