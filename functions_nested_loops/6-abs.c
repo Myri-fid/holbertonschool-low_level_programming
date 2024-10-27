@@ -7,9 +7,15 @@
 */
 int _abs(int n)
 {
-	int n = -number, res;
+	int res;
 
-	_putchar("%d\n", n);
-	res = abs(n);
-	_putchar("%d", res);
+	if (n < 0)
+	{
+		res = -n;
+	}
+	else
+	{
+		res = n;
+	}
+	return (res);
 }
