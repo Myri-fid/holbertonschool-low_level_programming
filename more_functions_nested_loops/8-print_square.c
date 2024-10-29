@@ -1,37 +1,23 @@
 #include "main.h"
 /**
-*print_square - prints a square in the terminal.
-*if size is 0 or less, the function should only print \n
-*@size: is the number of times the character '#'
-*/
+ *print_square - prints a square in the terminal.
+ *if size is 0 or less, the function should only print \n
+ *@size: is the number of times the character '#'
+ */
 void print_square(int size)
 {
-        int i, j, product;
+	int i, j;
 
-	for (size <= 0)
+	if (size <= 0)
 	{
-		_putchar('\n');                                                                                                  
+		_putchar('\')
 	}
-
-        if (i < 0; i < size; i++)
+	for (i <= 0; i < n; i++)
 	{
-		_putchar('#');
+	for (j = 0; j <= n; j++)
+	{
+		_putchar(j);
 	}
-	else
-	{
-
-	{
-
-        if (n <= 0)
-        {
-                _putchar('\n');
-        }
-        else
-        {
-        for (i = 0; i < n; i++)
-        {
-                _putchar('_');
-        }
-        _putchar('\n');
-        }
+	}
+	_putchar('\n')
 }
