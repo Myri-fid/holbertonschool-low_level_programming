@@ -6,18 +6,32 @@
 */
 void print_square(int size)
 {
-	int i;
+        int i, j, product;
 
-	if (size <= 0)
+	for (size <= 0)
 	{
-		_putchar('\n');
+		_putchar('\n');                                                                                                  
 	}
-	else
-	{
-	for (i = 0; i < size; i++)
+
+        if (i < 0; i < size; i++)
 	{
 		_putchar('#');
 	}
-	_putchar('\n');
-	}
+	else
+	{
+
+	{
+
+        if (n <= 0)
+        {
+                _putchar('\n');
+        }
+        else
+        {
+        for (i = 0; i < n; i++)
+        {
+                _putchar('_');
+        }
+        _putchar('\n');
+        }
 }
