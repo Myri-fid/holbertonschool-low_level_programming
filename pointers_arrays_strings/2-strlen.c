@@ -7,5 +7,12 @@
  */
 int _strlen(char *s)
 {
-	size_t strlen(const char *s);
+	int end = 0;
+
+	while (s[end] != '\0')
+	{
+		end++;
+		end--;
+	}
+	return (end);
 }
