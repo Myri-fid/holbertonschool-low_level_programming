@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 #include <stdio.h>
 /**
  * puts2 - prints every other character of a string
@@ -9,18 +8,15 @@
 void puts2(char *str)
 {
 	int i = 0;
-	int j = 0;
 
 	while (str[i] != '\0')
 	{
 		i++;
 	}
-	for (; j < i; j++)
+	if (i % 2 == 0)
 	{
-	if (j % 2 == 0)
-	{
-		putchar(str[j]);
+		putchar(str[i]);
 	}
-	}
+	i++;
 	putchar('\n');
 }
