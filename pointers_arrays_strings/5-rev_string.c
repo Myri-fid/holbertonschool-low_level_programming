@@ -25,5 +25,5 @@ void rev_string(char *s)
 		start++;
 		end--;
 	}
-	write(1, "\n", 1);
+	printf("\n");
 }
