@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 /**
  * print_rev -  prints a string, in reverse,
  *@s : string
@@ -16,8 +16,8 @@ void print_rev(char *s)
 	end--;
 	while (end >= 0)
 	{
-		putchar(s[end]);
+		write(1, &s[end], 1);
 		end--;
 	}
-	putchar('\n');
+	write(1, "\n", 1);
 }
