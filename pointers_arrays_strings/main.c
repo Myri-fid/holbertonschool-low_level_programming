@@ -7,10 +7,13 @@
  */
 int main(void)
 {
-	char s[10] = "My School";
+	int a;
+	int b;
 
-	printf("%s\n", s);
-	rev_string(s);
-	printf("%s\n", s);
+	a = 98;
+	b = 42;
+	printf("a=%d, b=%d\n", a, b);
+	swap_int(&a, &b);
+	printf("a=%d, b=%d\n", a, b);
 	return (0);
 }
