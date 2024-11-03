@@ -10,8 +10,6 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	char *ptr = *s1;
-
 	while (*s1 > 0 && *s2 != '\0')
 	{
 	}
