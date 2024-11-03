@@ -3,21 +3,21 @@
 
 /**
 *string_toupper - changes all lowercase
-*letters of a string to uppercase
+* of a string to uppercase
 *
 * Return: Always 0.
 */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			str[i] = (int)str[i] - 32;
+			s[i] = s[i] - 'a' + 'A';
 		}
 	}
-	return (str);
+	return (s);
 }
 
