@@ -24,10 +24,9 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 		n--;
 	}
-	for ( ; i < n; i++)
+	while (n > 0)
 	{
 		*ptr = '\0';
 	}
 	return (dest);
-	*ptr = '\0';
 }
