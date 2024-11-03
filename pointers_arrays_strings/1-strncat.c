@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strcat - Copies the string pointed to by src to dest
+ * _strncat - Copies the string pointed to by src to dest
  * @dest: destination buffer
  * @src: string
- *
+ * @n: bytes from src
  * Return: A pointer to dest
  */
 char *_strncat(char *dest, char *src, int n)
