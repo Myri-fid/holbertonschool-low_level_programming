@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,17 +8,11 @@
  */
 int main(void)
 {
-	int i;
+	char str[] = "Look up!\n";
+	char *ptr;
 
-	i = 0;
-	while (i < n)
-	{
-		if (i != 0)
-		{
-			printf(", ");
-		}
-		printf("%d", a[i]);
-		i++;
-	}
-	printf("\n");
+	ptr = string_toupper(str);
+	printf("%s", ptr);
+	printf("%s", str);
+	return (0);
 }
