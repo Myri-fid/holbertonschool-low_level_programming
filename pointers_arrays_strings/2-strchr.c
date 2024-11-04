@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * _strchr - check the code
  *@c: character
@@ -9,12 +8,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; i < c; i++)
+	while (*s != '\0')
 	{
-	if (c != *s)
-		return ('\0');
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
 	}
-	return (s);
+	return ('\0');
 }
