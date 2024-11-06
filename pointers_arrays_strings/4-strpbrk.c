@@ -8,16 +8,20 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	if ((*s == '\0') || (*accept == '\0'))
+	char *a;
+
+	while (*s)
 	{
-		return ('\0');
-	}
-	if (*s == *accept)
-	{
+		for (a = accept; *a != '\0'; a++)
+		{
+			if (*s == *a)
+			{
+				return (s);
+			}
+		}
 		s++;
-		return (s);
 	}
-	return ('\0');
+	return (NULL);
 }
 
 
