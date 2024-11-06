@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <math.h>
+#include "main.h"
 /**
  * factorial - check the code
  *@n: number
@@ -7,10 +6,14 @@
  */
 int factorial(int n)
 {
-
-	if (n <= 1)
+	if (n < 0)
+	{
+		return (-1);
+	}
+	if (n == 0)
 	{
 		return (1);
 	}
-	return ((n) * factorial(n - 1));
+	return (n * factorial(n - 1));
+
 }
