@@ -2,19 +2,16 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strlen_recursion - check the code
+ *@s: string
  * Return: Always 0.
  *
  */
 int _strlen_recursion(char *s)
 {
-	int len = 0;
-
-	while (*s != '\0')
+	if (*s == '\0')
 	{
-		len++;
-		s++;
+		return (0);
 	}
-	return (len);
+	return (1 + _strlen_recursion(s + 1));
 }
