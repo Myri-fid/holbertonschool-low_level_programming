@@ -1,16 +1,19 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  * main - check the code
- *
+ *@argv: string
+ *@argc: arguments
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	while (argc--)
+	int i;
+	(void)argc;
+
+	for (i = 0; argv[0][i] != '\0'; i++)
 	{
-		printf("%s\n", *argv++);
+		_putchar(argv[0][i]);
 	}
-	exit(EXIT_SUCCESS);
+	_putchar('\n');
+	return (0);
 }
