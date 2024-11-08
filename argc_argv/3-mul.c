@@ -12,15 +12,19 @@
  */
 int main(int argc, char *argv[])
 {
-      int x = atoi(argv[1]);
-      int y = atoi(argv[2]);
-      int cal = x *y
+      int x = 0;
+      int y = 0;
 
-      if ( argc < 3 )
+      if (argc == 3)
       {
-            printf( "Error\n", argv[0]);
+            int x = atoi(argv[1]);
+            int y = atoi(argv[2]);
+            printf("%d.\n", x * j);
+      }
+      else
+      {
+            printf( "Error\n",);
              return (1);
       }
-      printf("%d.\n", cal);
       return(0);
 }
