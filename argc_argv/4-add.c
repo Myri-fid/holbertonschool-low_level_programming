@@ -6,7 +6,6 @@
  *main - Prints the number of argument
  *@argc: The number of arguments
  *@argv: An array of strings
- *@cal: calcul
  *Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
