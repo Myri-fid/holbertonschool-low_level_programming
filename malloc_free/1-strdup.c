@@ -28,8 +28,8 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	for (j = 0; j <= i; j++)
-    {
-        dup[j] = str[j];
-    }
+	{
+		dup[j] = str[j];
+	}
 	return (dup);
 }

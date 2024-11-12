@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h> 
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * str_concat - returns a pointer to a newly allocated space in memory
