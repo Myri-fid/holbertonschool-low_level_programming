@@ -3,10 +3,12 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+*string_nconcat - concatenates two strings
+*@n: nombre
+*@s1: string
+*@s2: string
+*Return: null is passed, treat it as an empty string
+*/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *nconcat;
@@ -14,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int lens2 = 0;
 	unsigned int i;
 
-	if ( n >= lens2)
+	if (n >= lens2)
 	{
 		s2++;
 	}
