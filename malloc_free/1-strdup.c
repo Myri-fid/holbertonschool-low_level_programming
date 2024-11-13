@@ -13,8 +13,6 @@ char *_strdup(char *str)
 	unsigned int j;
 	char *dup;
 
-	dup = (char *)malloc(i + 1);
-
 	if (str == NULL)
 	{
 		return (NULL);
@@ -23,13 +21,16 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
+	dup = (char *)malloc((i + 1) * sizeof(char));
 	if (dup == NULL)
 	{
 		return (NULL);
 	}
-	for (j = 0; j <= i; j++)
+	for (j = 0; j < i; j++)
 	{
 		dup[j] = str[j];
 	}
+	dup[i] = '\0';
 	return (dup);
+
 }
