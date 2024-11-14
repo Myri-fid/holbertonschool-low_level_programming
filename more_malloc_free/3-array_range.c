@@ -5,8 +5,8 @@
 
 /**
  * array_range - allocates memory for an array
- *@nmemb: elements
- *@size: size of array
+ *@min: elements
+ *@max: size of array
  * Return: ptr or null if is fails.
  */
 int *array_range(int min, int max)
