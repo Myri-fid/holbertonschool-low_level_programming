@@ -19,8 +19,9 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
+	size = max - min + 1;
 	/** alloue de la memoire pour un tableau */
-	array_range = malloc(sizeof(int) * max - min + 1);
+	array_range = malloc(size * sizeof(int));
 	/* si allocation echou retourne null */
 	if (array_range == NULL)
 	{
