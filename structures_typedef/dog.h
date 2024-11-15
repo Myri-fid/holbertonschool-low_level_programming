@@ -1,9 +1,11 @@
-#include <stdio.h>
-
+#ifndef DOG_H
+#define DOG_H
 /**
- * main - check the code
- *
- * Return: Always 0.
+ *struct dog - check the code
+ *@name: name
+ *@age: age
+ *@owner: owner
+ *Description: Longer description
  */
 struct dog
 {
@@ -11,3 +13,4 @@ struct dog
 	float age;
 	char *owner;
 };
+#endif
