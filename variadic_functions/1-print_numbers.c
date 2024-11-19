@@ -1,8 +1,10 @@
 #include "variadic_functions.h"
-
+#include <stdio.h>
+#include <stdarg.h>
 /**
- * main - check the code
- *
+ * print_numbers -  prints numbers
+ *@separator: separator
+ *@n: numbers
  * Return: Always 0.
  *
  */
