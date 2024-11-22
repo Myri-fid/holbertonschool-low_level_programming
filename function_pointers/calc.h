@@ -1,10 +1,7 @@
 #ifndef CALC_H
 #define CALC_H
-typedef struct op
-{
-	char *op;
-	int (*f)(int a, int b);
-} op_t;
+#include <stdio.h>
+#include <stdlib.h>
 typedef struct op
 {
 	char *op;
@@ -17,4 +14,3 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 #endif
-~       
