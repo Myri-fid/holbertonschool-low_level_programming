@@ -22,6 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->str = strdup(str);/*copie chaine caractere*/
 	if (new_node->str == NULL)
 	{
+		free(new_node);
 		return (NULL);
 	}
 	new_node->len = strlen(str); /*initialise longueur */
