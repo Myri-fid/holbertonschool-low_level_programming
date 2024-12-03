@@ -1,13 +1,14 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
- * add_node_end - check the code
- *@str: string
- *@head: head
- * Return: Always 0.
+ * add_node_end - Adds a new node at the end of a list.
+ * @head: Pointer
+ * @str: String
+ *
+ * Return: The address of element
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -16,29 +17,34 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 	{
-		free(new_node);
 		return (NULL);
 	}
-	new_node->str = strdup(str);/*copie chaine caractere*/
+
+	new_node->str = strdup(str);
 	if (new_node->str == NULL)
 	{
 		free(new_node);
 		return (NULL);
 	}
-	new_node->len = strlen(str); /*initialise longueur */
+
+	new_node->len = strlen(str);
 	new_node->next = NULL;
+
 	if (*head == NULL)
 	{
 		*head = new_node;
 	}
 	else
 	{
-	temp = *head;
-	while (temp->next != NULL)
-	{
-		temp = temp->next;
+		temp = *head;
+		while (temp->next != NULL)
+		{
+			temp = temp->next;
+		}
+
+		temp->next = new_node;
 	}
-	temp->next = new_node;/*ajoute nv noeud ala fin*/
-	}
+
 	return (new_node);
 }
+
