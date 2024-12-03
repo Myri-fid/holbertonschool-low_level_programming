@@ -4,15 +4,16 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
+ * add_node_end - check the code
+ *@str: string
+ *@head: head
  * Return: Always 0.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node, *temp;
-	new_node = malloc(sizeof(list_t));
 
+	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 	{
 		free(new_node);
