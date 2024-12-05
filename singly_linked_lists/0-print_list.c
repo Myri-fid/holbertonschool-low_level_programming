@@ -22,9 +22,9 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%u][%s]\n", current->len, current->str);
+			printf("[%u] %s\n", current->len, current->str);
 		}
-		current = current->next;
+			current = current->next;
 	}
 	return (n_noeud);
 }
