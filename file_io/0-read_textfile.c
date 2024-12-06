@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "main.h"
+#include <stdlib.h>
 #include <sys/stat.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -27,6 +25,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);/*si fichier pas ouvert*/
 	}
 	buffer = (char *) malloc(letters);/*memoire pour données letters*/
+	if (buffer == NULL)
+	{
+		close(fd);
+		return (0);
+	}
+
 	bytesRead = read(fd, buffer, letters);
 	/*donnees dans buffer*/
 	if (bytesRead == -1)
