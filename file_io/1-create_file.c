@@ -13,18 +13,20 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd, bytes_written;
 	int len = 0;
+	int i;
 
-
-	if (filename == NULL)/*si nom fichier et null*/
+	if (filename == NULL)
 	{
 		return (-1);
 	}
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (fd == -1)
+	{
 		return (-1);
+	}
 	if (text_content != NULL)
 	{
-		while (text_content[len] != '\0')
+		for (i = 0; text_content[i] != '\0'; i++)
 		{
 			len++;
 		}
@@ -38,3 +40,4 @@ int create_file(const char *filename, char *text_content)
 	close(fd);
 	return (1);
 }
+
