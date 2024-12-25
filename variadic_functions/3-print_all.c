@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		if (i > 0 && (format[i] == 'c' || format[i] == 'i' ||
-					format[i] == 'f' || format[i] == 's'))
+				format[i] == 'f' || format[i] == 's'))
 			printf(", ");
 		switch (format[i])
 		{
