@@ -53,6 +53,6 @@ int main(int argc, char *argv[])
 	close(fd_from);
 	close(fd_to);
 
-	return 0;
+	return (0);
 }
 
